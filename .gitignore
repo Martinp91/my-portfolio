@@ -1,0 +1,6 @@
+
+*.vsidx
+.vs/my-portfolio/FileContentIndex/read.lock
+.vs/my-portfolio/v17/TestStore/0/000.testlog
+.vs/my-portfolio/v17/TestStore/0/testlog.manifest
+.vs/slnx.sqlite

@@ -1,0 +1,158 @@
+﻿
+/*--------  ↓  #navbar  ↓  --------*/
+
+#collapsibleNavbar a {
+    padding: 6px 10px;
+}
+
+#login_btn:hover {
+    color: white;
+    background-color: #1eba4f;
+    border-color: #1eba4f;
+}
+
+#twitter_btn:hover {
+    color: white;
+    background-color: #55acee;
+    border-color: #55acee;
+}
+
+#linkedin_btn:hover {
+    color: white;
+    background-color: #0082ca;
+    border-color: #0082ca;
+}
+
+@media screen and (max-width: 575px) {
+
+    #collapsibleNavbar a {
+        width: 75%;
+    }
+
+    #login_btn {
+        color: white;
+        background-color: #1eba4f;
+        border-color: #1eba4f;
+    }
+
+    #twitter_btn {
+        color: white;
+        background-color: #55acee;
+        border-color: #55acee;
+    }
+
+    #linkedin_btn {
+        color: white;
+        background-color: #0082ca;
+        border-color: #0082ca;
+    }
+}
+
+/*--------  ↑  #navbar  ↑  --------*/
+
+.rounded-5 {
+    border-radius: 1.5rem;
+}
+
+#banner img {
+    object-fit: cover;
+    min-height: max(25rem, 50vh);
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+/*--------  ↓  #intro  ↓  --------*/
+
+#intro {
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+#grid-intro {
+    display: grid;
+    max-width: 80rem;
+    margin-right: 3rem;
+    gap: 0 3rem;
+    grid-template-columns: max-content auto;
+    grid-template-areas:
+        "perfil-top   acerca-top"
+        "perfil-end   acerca-end";
+}
+
+#perfil-top {
+    grid-area: perfil-top;
+    text-align: center;
+    align-self: baseline;
+}
+
+#perfil-end {
+    grid-area: perfil-end;
+    text-align: center;
+}
+
+#acerca-top {
+    grid-area: acerca-top;
+    justify-self: start;
+    align-self: baseline;
+}
+
+#acerca-end {
+    grid-area: acerca-end;
+    text-align: start;
+}
+
+@media only screen and (max-width: 767px) {
+
+    #grid-intro {
+        margin-right: 0;
+        gap: 0;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "perfil-top"
+            "perfil-end"
+            "acerca-top"
+            "acerca-end";
+    }
+}
+
+#avatar {
+    border-radius: 50%;
+    background-color: #54ffe2;
+    width: min(calc(7rem + 7vw), 12.25rem);
+    margin-top: max(calc(-.5 * ( 7rem + 7vw)), calc(-.5 * 12.25rem));
+    outline: solid #54ffe2;
+    outline-width: min(calc(.03 * (7rem + 7vw)), calc(.03 * 12.25rem));
+}
+
+#contact_btn {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+/*--------  ↑  #intro  ↑  --------*/
+
+
+/*--------  ↓  #skills  ↓  --------*/
+
+#grid-skills {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: max-content auto;
+    align-items: center;
+}
+
+.progreso > div {
+    outline: 3px solid seagreen;
+    padding: 3px;
+    max-width: 50rem;
+}
+
+@media only screen and (max-width: 767px) {
+
+    #grid-skills {
+        grid-template-columns: auto;
+        gap: 0;
+        margin-top: 0 !important;
+    }
+}
+
+/*--------  ↑  #intro  ↑  --------*/
+
